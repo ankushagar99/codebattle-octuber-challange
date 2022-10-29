@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-$ad0fwp7&se716+dzxm=s$#qs&+m@nvab5z$5f0*2vord*hg_v
 DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
-
+CSRF_TRUSTED_ORIGINS = ['https://codebattle-challange.up.railway.app']
 
 # Application definition
 
