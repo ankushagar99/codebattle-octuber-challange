@@ -137,7 +137,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DEFAULT_FILE_STORAGE = "github_storages.backend.BackendStorages"
 GITHUB_HANDLE = "ankushagar99"
 ACCESS_TOKEN = "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"
-GITHUB_REPO_NAME = "mediastorage"
+GITHUB_REPO_NAME = "djangostorage"
 MEDIA_BUCKET_NAME = "media"
 
 # Default primary key field type
