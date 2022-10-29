@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Advocate(models.Model):
-    profile_pic = models.CharField(max_length=255, blank=True, null=True)
+    profile_pic = models.ImageField(upload_to='profile_pic')
     username = models.CharField(max_length=50, unique = True)
     name = models.CharField(max_length=80)
     bio = models.TextField()

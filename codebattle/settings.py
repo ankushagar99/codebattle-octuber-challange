@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'whitenoise.runserver_nostatic',    
+    'github_storages',
     'rest_framework',
     'backend',
 ]
@@ -83,9 +84,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': 'ZstDlMr5Nnsl75MgPp4Z',
-        'HOST': 'containers-us-west-87.railway.app',
-        'PORT': '6180',
+        'PASSWORD': 'uGQuFol8U5Zbr4EUKIJb',
+        'HOST': 'containers-us-west-104.railway.app',
+        'PORT': '5900',
     }
 }
 
@@ -127,6 +128,17 @@ STATIC_URL = 'static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE="whitenoise.storage.CompressedManifestStaticFilesStorage"
+
+MEDIA_URL = 'media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+#Used github for media files
+
+DEFAULT_FILE_STORAGE = "github_storages.backend.BackendStorages"
+GITHUB_HANDLE = "ankushagar99"
+ACCESS_TOKEN = "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"
+GITHUB_REPO_NAME = "mediastorage"
+MEDIA_BUCKET_NAME = "media"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
